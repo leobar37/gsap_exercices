@@ -11892,7 +11892,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var components = [];
 
 _coreClass.default.use(components);
-},{"./esm/components/core/core-class":"../node_modules/swiper/esm/components/core/core-class.js","./esm/components/virtual/virtual":"../node_modules/swiper/esm/components/virtual/virtual.js","./esm/components/keyboard/keyboard":"../node_modules/swiper/esm/components/keyboard/keyboard.js","./esm/components/mousewheel/mousewheel":"../node_modules/swiper/esm/components/mousewheel/mousewheel.js","./esm/components/navigation/navigation":"../node_modules/swiper/esm/components/navigation/navigation.js","./esm/components/pagination/pagination":"../node_modules/swiper/esm/components/pagination/pagination.js","./esm/components/scrollbar/scrollbar":"../node_modules/swiper/esm/components/scrollbar/scrollbar.js","./esm/components/parallax/parallax":"../node_modules/swiper/esm/components/parallax/parallax.js","./esm/components/zoom/zoom":"../node_modules/swiper/esm/components/zoom/zoom.js","./esm/components/lazy/lazy":"../node_modules/swiper/esm/components/lazy/lazy.js","./esm/components/controller/controller":"../node_modules/swiper/esm/components/controller/controller.js","./esm/components/a11y/a11y":"../node_modules/swiper/esm/components/a11y/a11y.js","./esm/components/history/history":"../node_modules/swiper/esm/components/history/history.js","./esm/components/hash-navigation/hash-navigation":"../node_modules/swiper/esm/components/hash-navigation/hash-navigation.js","./esm/components/autoplay/autoplay":"../node_modules/swiper/esm/components/autoplay/autoplay.js","./esm/components/effect-fade/effect-fade":"../node_modules/swiper/esm/components/effect-fade/effect-fade.js","./esm/components/effect-cube/effect-cube":"../node_modules/swiper/esm/components/effect-cube/effect-cube.js","./esm/components/effect-flip/effect-flip":"../node_modules/swiper/esm/components/effect-flip/effect-flip.js","./esm/components/effect-coverflow/effect-coverflow":"../node_modules/swiper/esm/components/effect-coverflow/effect-coverflow.js","./esm/components/thumbs/thumbs":"../node_modules/swiper/esm/components/thumbs/thumbs.js"}],"C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./esm/components/core/core-class":"../node_modules/swiper/esm/components/core/core-class.js","./esm/components/virtual/virtual":"../node_modules/swiper/esm/components/virtual/virtual.js","./esm/components/keyboard/keyboard":"../node_modules/swiper/esm/components/keyboard/keyboard.js","./esm/components/mousewheel/mousewheel":"../node_modules/swiper/esm/components/mousewheel/mousewheel.js","./esm/components/navigation/navigation":"../node_modules/swiper/esm/components/navigation/navigation.js","./esm/components/pagination/pagination":"../node_modules/swiper/esm/components/pagination/pagination.js","./esm/components/scrollbar/scrollbar":"../node_modules/swiper/esm/components/scrollbar/scrollbar.js","./esm/components/parallax/parallax":"../node_modules/swiper/esm/components/parallax/parallax.js","./esm/components/zoom/zoom":"../node_modules/swiper/esm/components/zoom/zoom.js","./esm/components/lazy/lazy":"../node_modules/swiper/esm/components/lazy/lazy.js","./esm/components/controller/controller":"../node_modules/swiper/esm/components/controller/controller.js","./esm/components/a11y/a11y":"../node_modules/swiper/esm/components/a11y/a11y.js","./esm/components/history/history":"../node_modules/swiper/esm/components/history/history.js","./esm/components/hash-navigation/hash-navigation":"../node_modules/swiper/esm/components/hash-navigation/hash-navigation.js","./esm/components/autoplay/autoplay":"../node_modules/swiper/esm/components/autoplay/autoplay.js","./esm/components/effect-fade/effect-fade":"../node_modules/swiper/esm/components/effect-fade/effect-fade.js","./esm/components/effect-cube/effect-cube":"../node_modules/swiper/esm/components/effect-cube/effect-cube.js","./esm/components/effect-flip/effect-flip":"../node_modules/swiper/esm/components/effect-flip/effect-flip.js","./esm/components/effect-coverflow/effect-coverflow":"../node_modules/swiper/esm/components/effect-coverflow/effect-coverflow.js","./esm/components/thumbs/thumbs":"../node_modules/swiper/esm/components/thumbs/thumbs.js"}],"C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -11924,7 +11924,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -11959,12 +11959,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/swiper/swiper-bundle.css":[function(require,module,exports) {
+},{"./bundle-url":"C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/swiper/swiper-bundle.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"ts/main.ts":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"ts/main.ts":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -12006,11 +12006,18 @@ var swiperGalery = new swiper_1.default('.inline_galery', {
       slidesPerView: 3
     },
     360: {
-      slidesPerView: 2
+      slidesPerView: 1
     }
   }
+}); // animation menu
+
+var burguer = document.querySelector('.burguer');
+var menu = document.querySelector('.menu');
+burguer.addEventListener('click', function () {
+  burguer.classList.toggle('is-active');
+  menu.classList.toggle('open');
 });
-},{"swiper":"../node_modules/swiper/swiper.esm.js","swiper/swiper-bundle.css":"../node_modules/swiper/swiper-bundle.css"}],"C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"swiper":"../node_modules/swiper/swiper.esm.js","swiper/swiper-bundle.css":"../node_modules/swiper/swiper-bundle.css"}],"C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12038,7 +12045,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57894" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56603" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -12214,5 +12221,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/main.ts"], null)
+},{}]},{},["C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/main.ts"], null)
 //# sourceMappingURL=/main.0e24b174.js.map

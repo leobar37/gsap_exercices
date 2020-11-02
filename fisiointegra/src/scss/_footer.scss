@@ -1,0 +1,66 @@
+.footer {
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .content {
+      margin-top: 3rem;
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      @include media-md{
+          width: 80%;
+      }
+    }
+    .menu {
+      ul {
+        @extend %menu;
+        flex-direction: column;
+        li {
+          padding: 0.5rem 0 !important;
+        }
+        margin-top: 1rem;
+      }
+    }
+    &_social {
+      display: flex;
+      flex-direction: column;
+      .social {
+        margin-top: 1rem;
+      }
+    }
+    /***************************responsive footer*************************************/
+    @include media-sm{
+      .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .logo{
+          margin: 0.5rem 0;
+        }
+        .footer_social{
+          margin: 1rem 0;
+          .title{
+            text-align: center;
+            // padding: 1rem 0;
+          }
+        }
+        .menu{
+          margin:  1rem 0;
+           align-items: center;
+           justify-content: center;
+           h3{
+             text-align: center;
+           }
+           ul{
+             text-align: center;
+           }
+        }
+      }
+      
+    }
+  
+    /***************************responsive footer*************************************/
+  }

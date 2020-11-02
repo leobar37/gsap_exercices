@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@import "hamburgers/_sass/hamburgers/hamburgers.scss";
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
 ul {
@@ -12,10 +12,13 @@ ul {
 a {
   text-decoration: none;
 }
-@import 'responsive';
+
 @import 'variables';
-@import 'header';
+@import 'responsive';
 @import 'generals';
+@import "mixins/mixinhelpers.scss";
+@import "footer";
+@import 'header';
 // **************** components ***************
 
 @import 'components/main.scss';
@@ -27,4 +30,6 @@ a {
 body {
   font-size: 18px;
   font-family: $sans-font;
+  overflow-x: hidden;
+
 }

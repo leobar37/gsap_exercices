@@ -13,4 +13,23 @@
       font-size: 5rem;
     }
   }
+  /***************************resposive*************************************/
+  
+  @include media-sm{
+    //  flex-direction: column;
+    //  height: auto;
+    // width: 80%;
+    .title{
+      margin-left: 1.8rem;
+      // border: 2px solid black;
+    }
+    .icon{
+      margin-right: 5rem;
+      i{
+        font-size: 3rem;
+      }    
+    }
+
+  }
+  /***************************resposive*************************************/
 }

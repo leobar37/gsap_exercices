@@ -27,7 +27,19 @@ let swiperGalery = new Swiper('.inline_galery', {
       slidesPerView: 3,
     },
     360: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
   },
+});
+
+
+// animation menu
+
+const burguer = document.querySelector('.burguer') as HTMLButtonElement;
+const menu = document.querySelector('.menu') as HTMLElement;
+
+burguer.addEventListener('click' , ()=>{
+     
+burguer.classList.toggle('is-active');
+menu.classList.toggle('open');
 });

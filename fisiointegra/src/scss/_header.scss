@@ -7,11 +7,23 @@
   grid-column: 3;
   display: flex;
   justify-content: space-around;
+  @include media-sm{
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   li{
+     margin: 1.1rem 0;
+   }
+  }
   @include media-md {
     grid-column: span 3;
   }
+  
 }
 .header {
+  .burguer{
+  visibility: hidden;
+  }
   &__nav {
     display: grid;
     grid-template-columns: 20% 20% 60%;
@@ -19,25 +31,70 @@
     padding: 20px 15px;
     .menu {
       @extend %menu;
-    }
+      /***************************responsive mobile*************************************/
+      @include media-sm{
+        display: none;
+      }
+      &.open{
+        transition: 1s ease-in-out;
+         display: flex;
+        
+
+       }
+      /***************************responsive mobile*************************************/
+      .burguer {
+        // text-align: right;
+        outline: none;
+        border: none;
+        position: relative;
+        //  padding: 1.5rem 0;
+        margin: 1rem 0;   
+        button{
+               right: -8rem;
+               position: absolute;
+                 
+           }
+      }
+     }
     @include media-md {
+       margin-left: 1rem;
       .logo {
         text-align: center;
         padding: 1rem 0;
         grid-column: span 3;
       }
     }
+    @include media-sm{
+      grid-template-columns: 40% 20%;
+       .logo{
+         grid-column: 1;
+       }
+      .burguer{
+        display: block;
+        visibility: visible;
+        grid-column: 3;
+       }
+       .menu{
+          grid-column:  span 3;
+       }
+
+    }
   }
   .swiper-container {
     width: 100%;
     overflow: hidden;
+     @include media-sm{
+       height: 70vh;
+     }
   }
   .slide_content {
+    // overflow-x: hidden;
     height: 85vh;
     background-position: center 20%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    
     &.video {
       position: relative;
       .video {
@@ -100,5 +157,56 @@
         }
       }
     }
+   
+      /***************************responsive mobile 368*************************************/
+       @include media-sm{
+         background-size: contain;
+         height: 60vh;
+         background-position: center top;
+        //  height: 100vh;
+        .about_slide{
+           justify-content: center;
+              bottom: -5rem !important;
+              z-index: 10;
+           align-items: flex-start;
+           left: -1.8rem !important;
+          flex-direction: column;
+            &_first{
+               .content{
+                 width: 100%;
+                 background-color: $primary-color;
+                 margin-left: 0;
+       
+               }
+              p{
+                padding: 0;
+                font-size: 0.9rem;
+              }
+            }
+            &_second{
+              width: 100%;
+              display: flex ;
+              justify-content: center;
+              .title, .social{
+                // border: 2px solid black;
+                width: 92%;
+                text-align: center;
+              }
+              .social{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+              }
+            }
+          }
+           
+       }
+       
+      /***************************responsive mobile 368*************************************/
   }
+
+  /***************************responsive*************************************/
+   
+  /***************************responsive*************************************/
 }
