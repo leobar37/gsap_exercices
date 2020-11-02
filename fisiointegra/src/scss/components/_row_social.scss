@@ -1,0 +1,16 @@
+.row_social {
+  width: 100%;
+  height: 18vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  .icon {
+    margin: 0 2rem;
+    i {
+      vertical-align: bottom;
+      font-size: 5rem;
+    }
+  }
+}

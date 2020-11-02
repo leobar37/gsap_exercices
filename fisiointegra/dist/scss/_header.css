@@ -1,0 +1,13 @@
+.header__nav {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 20% 20% 30%;
+  width: 100%;
+}
+.header__nav .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=/_header.css.map */

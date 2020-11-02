@@ -1,0 +1,104 @@
+%menu {
+  a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+  grid-column: 3;
+  display: flex;
+  justify-content: space-around;
+  @include media-md {
+    grid-column: span 3;
+  }
+}
+.header {
+  &__nav {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    width: 100%;
+    padding: 20px 15px;
+    .menu {
+      @extend %menu;
+    }
+    @include media-md {
+      .logo {
+        text-align: center;
+        padding: 1rem 0;
+        grid-column: span 3;
+      }
+    }
+  }
+  .swiper-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .slide_content {
+    height: 85vh;
+    background-position: center 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &.video {
+      position: relative;
+      .video {
+        position: absolute;
+        width: 100%;
+        top: -4rem;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+    // box with description
+    .about_slide {
+      font-size: 18px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      // **************** responsive 768 ***************
+      @include media-md {
+        .about_slide_first {
+          width: 100%;
+          .content {
+            margin-left: 10%;
+          }
+        }
+      }
+      // **************** end responsive 768 ***************
+      &_first {
+        background: $primary-color;
+        width: 60%;
+        .content {
+          margin-left: 22%;
+        }
+        h3,
+        p {
+          padding: 10px 10px;
+          margin: 10px 25px;
+        }
+      }
+      &_second {
+        height: 17vh;
+        width: 50%;
+        background-color: #ffffff;
+        display: flex;
+        padding-left: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+          padding: 15px 10px;
+        }
+        justify-content: flex-start;
+        .social {
+          margin-bottom: 1rem;
+          margin-right: 1.5rem;
+          i {
+            font-size: 2.3em;
+          }
+        }
+      }
+    }
+  }
+}

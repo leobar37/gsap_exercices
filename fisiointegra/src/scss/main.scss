@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+@import 'responsive';
+@import 'variables';
+@import 'header';
+@import 'generals';
+// **************** components ***************
+
+@import 'components/main.scss';
+// **************** end components ***************
+// **************** main ***************
+
+@import 'sections/main.scss';
+// **************** end main ***************
+body {
+  font-size: 18px;
+  font-family: $sans-font;
+}
+
+.paragraph {
+  font-family: $roboto;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+}

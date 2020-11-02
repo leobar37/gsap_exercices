@@ -1,0 +1,14 @@
+.conten {
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.panel {
+  width: 100%;
+  height: 100vh;
+  // property hints to browsers how an element is expected
+  // to change browserts may set up optiizations before an element is  change
+  will-change: transform;
+}

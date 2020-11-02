@@ -1,0 +1,21 @@
+// **************** fonts ***************
+$sans-font: 'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$weights-sans: (
+  'light': 300,
+  'medium': 400,
+  'bold': 600,
+);
+
+// **************** end fonts ***************
+
+// **************** colors ***************
+
+$primary-color: #f1faee;
+$secondary-color: #8367c7;
+
+// **************** end colors ***************
+
+// h1 {
+//   font-weight: map-get($map: $weights-sans, $key: 'light');
+// }

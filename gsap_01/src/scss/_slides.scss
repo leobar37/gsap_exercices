@@ -1,0 +1,95 @@
+// .panel {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   h1 {
+//     font-size: 45px;
+//   }
+// }
+
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  // determina si la posicion de la image de fodo
+  // sera fija dentro de la pantalla o se desplazara
+  // con su bloque contenedor
+  // fixed
+  // Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor.
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  z-index: 1;
+  font-size: 3em;
+  font-weight: 400;
+}
+// .container {
+//   width: 100%;
+//   overflow-x: hidden;
+// }
+// body {
+//   overflow-x: hidden;
+// }
+
+// // .box {
+// //   width: 100%;
+// //   height: 100vh;
+// //   position: relative;
+// //   .panel {
+// //     position: absolute;
+// //     width: 100%;
+// //     height: 100%;
+// //   }
+// //   // .red {
+// //   //   z-index: 1;
+// //   // }
+// //   // .orange {
+// //   //   z-index: 2;
+// //   // }
+// //   // .purple {
+// //   //   z-index: 3;
+// //   // }
+// // }
+
+// // .orange {
+// //   background-color: orange;
+// // }
+
+// // .container {
+// //   width: 600%;
+// //   height: 100%;
+// //   display: flex;
+// //   flex-wrap: nowrap;
+// // }
+// .panel {
+//   width: 100%;
+//   height: 100vh;
+// }
+// .purple {
+//   background-color: purple;
+// }
+// .gray {
+//   background-color: gray;
+// }
+// .orange {
+//   background-color: orange;
+// }

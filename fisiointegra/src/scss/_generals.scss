@@ -1,0 +1,67 @@
+.social {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  a {
+    // margin: 1rem 0.5rem 0 0;
+    text-decoration: none;
+    i {
+      color: black;
+      font-size: 2rem;
+    }
+  }
+}
+.paragraph {
+  font-family: $roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7rem;
+  // @include media-md {
+  //   font-size: 0.8em;
+  // }
+}
+.title {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 600;
+  &.bg {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  &.md {
+    font-size: 2em;
+  }
+  // **************** responsive  ***************
+  @include media-md {
+    &.bg {
+      font-size: 2em;
+    }
+    &.md {
+      font-size: 1.5em;
+    }
+  }
+  // **************** end responsive  ***************
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.logo {
+  font-weight: 600;
+  font-style: italic;
+}
+//  **draw line bottom
+
+@mixin line_bottom($width, $bottom) {
+  &:before {
+    position: absolute;
+    content: '';
+    width: $width;
+    bottom: $bottom;
+    height: 7px;
+    background-color: $secondary-color;
+  }
+}

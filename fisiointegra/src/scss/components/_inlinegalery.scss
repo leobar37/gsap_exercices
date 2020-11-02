@@ -1,0 +1,26 @@
+.inline_galery {
+  width: 100%;
+  overflow: hidden;
+  height: 35vh;
+  .item_galery {
+    position: relative;
+    width: 380px;
+    overflow: hidden;
+    img {
+      vertical-align: top;
+      object-fit: cover;
+      object-position: top 80%;
+      width: 100%;
+    }
+  }
+  @include media-md {
+    .item_galery {
+      width: 450px;
+      img {
+        vertical-align: middle;
+        object-fit: contain;
+        object-position: center center;
+      }
+    }
+  }
+}
