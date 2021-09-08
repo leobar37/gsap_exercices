@@ -14106,11 +14106,9 @@ var all_1 = require("gsap/all");
 
 var lineMenu = all_1.gsap.timeline({
   repeat: -1
-}); // lineMenu.;
-// lineMenu.s
-
+});
 var circle = document.querySelector('.circle');
-var line$ = all_1.gsap.timeline().to(circle, {
+all_1.gsap.timeline().to(circle, {
   opacity: 0
 }).to(circle, {
   opacity: 1
@@ -14124,8 +14122,6 @@ lineMenu.from(all_1.gsap.utils.shuffle(Object.assign([], menu$)), {
   stagger: {
     each: 0.2,
     yoyo: true,
-    // repeat: -1,
-    // repeat: -1,
     from: 'edges'
   }
 }).to(all_1.gsap.utils.shuffle(Object.assign([], menu$)), {
@@ -14134,20 +14130,12 @@ lineMenu.from(all_1.gsap.utils.shuffle(Object.assign([], menu$)), {
   stagger: {
     each: 0.2,
     yoyo: true,
-    // repeat: -1,
-    // repeat: -1,
     from: 'edges'
   }
 }).call(function () {
   console.log(lineMenu.iteration());
-}); //   .add(line$);
-// line$.to()
-// function addTicker(time, deltatime, frame) {
-//   console.log('my tocker', time, deltatime, frame);
-// }
-// gsap.ticker.add(addTicker);
-// gsap.ticker.remove(addTicker);
-},{"gsap/all":"../node_modules/gsap/all.js"}],"C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+});
+},{"gsap/all":"../node_modules/gsap/all.js"}],"C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -14175,7 +14163,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65127" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58312" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -14351,5 +14339,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/gsaptwo.ts"], null)
+},{}]},{},["C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/gsaptwo.ts"], null)
 //# sourceMappingURL=/gsaptwo.1bdcc55b.js.map

@@ -14254,23 +14254,12 @@ Object.defineProperty(exports, "__esModule", {
 exports.addSectionCallback = void 0;
 
 exports.addSectionCallback = function (timline, params) {
-  //   console.log(
-  //     params.start,
-  //     params.end,
-  //     params.onEnter(),
-  //     params.onLeave(),
-  //     params.onEnterBack(),
-  //     params.onLeaveBack()
-  //   );
-  console.log(params.start, params.end);
-
   var trackDirection = function trackDirection(animation) {
     var onUpdate = animation.eventCallback('onUpdate'); // if exist callback onUpadate
 
     var prevTime = animation.time();
     var direction = animation.reversed() ? -1 : 1;
     animation.eventCallback('onUpdate', function () {
-      //   console.log('my on update');
       var time = animation.time();
 
       if (time !== direction) {
@@ -14282,14 +14271,8 @@ exports.addSectionCallback = function (timline, params) {
     });
   };
 
-  trackDirection(timline);
-
-  var empty = function empty(v) {
-    return v;
-  }; // in case  the callback is not defined
-  //   timline.d
+  trackDirection(timline); //   timline.d
   // timline.d
-
 };
 },{}],"ts/hsections.ts":[function(require,module,exports) {
 "use strict";
@@ -14413,7 +14396,7 @@ gsap_1.gsap.utils.toArray(sections).forEach(function (section, i) {
 //       end
 //     );
 // }
-},{"gsap":"../node_modules/gsap/index.js","gsap/all":"../node_modules/gsap/all.js","../ts/functions":"ts/functions.ts"}],"C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"gsap":"../node_modules/gsap/index.js","gsap/all":"../node_modules/gsap/all.js","../ts/functions":"ts/functions.ts"}],"C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -14441,7 +14424,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65127" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58312" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -14617,5 +14600,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/hsections.ts"], null)
+},{}]},{},["C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/hsections.ts"], null)
 //# sourceMappingURL=/hsections.1d9b27be.js.map

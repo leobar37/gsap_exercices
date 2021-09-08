@@ -15752,9 +15752,7 @@ var all_1 = require("gsap/all");
 
 var ScrollTrigger_1 = require("gsap/src/ScrollTrigger");
 
-gsap_1.gsap.registerPlugin(ScrollTrigger_1.ScrollTrigger); // ScrollTrigger.create({
-//     trigger :
-// })
+gsap_1.gsap.registerPlugin(ScrollTrigger_1.ScrollTrigger);
 
 var aplicateEffect = function aplicateEffect(el) {
   gsap_1.gsap.to(el, {
@@ -15788,7 +15786,7 @@ var aplicateEffect = function aplicateEffect(el) {
 all_1.toArray('.box').forEach(function (el) {
   aplicateEffect(el);
 });
-},{"gsap":"../node_modules/gsap/index.js","gsap/all":"../node_modules/gsap/all.js","gsap/src/ScrollTrigger":"../node_modules/gsap/src/ScrollTrigger.js"}],"C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"gsap":"../node_modules/gsap/index.js","gsap/all":"../node_modules/gsap/all.js","gsap/src/ScrollTrigger":"../node_modules/gsap/src/ScrollTrigger.js"}],"C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -15816,7 +15814,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65127" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58312" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -15992,5 +15990,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/leobar37/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/scrollTrigger.ts"], null)
+},{}]},{},["C:/Users/USER/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/scrollTrigger.ts"], null)
 //# sourceMappingURL=/scrollTrigger.6660617d.js.map

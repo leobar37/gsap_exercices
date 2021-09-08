@@ -3,11 +3,8 @@ import { toArray } from 'gsap/all';
 import { ScrollTrigger } from 'gsap/src/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-// ScrollTrigger.create({
-//     trigger :
-// })
 
-const aplicateEffect = (el) => {
+const aplicateEffect = (el: HTMLElement) => {
   gsap.to(el, {
     scrollTrigger: {
       // toggleActions: 'play reverse play reverse',
@@ -35,6 +32,6 @@ const aplicateEffect = (el) => {
     duration: 1,
   });
 };
-toArray('.box').forEach((el) => {
-  aplicateEffect(el);
+toArray('.box').forEach((el ) => {
+  aplicateEffect(el as HTMLElement);
 });
