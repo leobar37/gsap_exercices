@@ -16,7 +16,19 @@ html {
 
 body {
   font-family: var(--default-font);
-  overscroll-behavior: none;
+  // property sets what does a browser when reaching the boundary
+  // of scrolling area
+
+  overscroll-behavior-y: none;
   background-color: #ffffff;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  pointer-events: none;
 }

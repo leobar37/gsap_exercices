@@ -3,7 +3,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { domUtils } from "./utils";
 import Scrollbar from "smooth-scrollbar";
+
 gsap.registerPlugin(ScrollTrigger);
+
 window.addEventListener("load", () => {
   const scrollBar = domUtils.get(".main");
   const textContainer = domUtils.get(".text-container");
@@ -22,6 +24,7 @@ window.addEventListener("load", () => {
       damping: 0.1,
       delegateTo: document,
     });
+
     verticalScrollbar.setPosition(0, 0);
     verticalScrollbar.track.xAxis.element.remove();
     verticalScrollbar.track.yAxis.element.remove();
@@ -44,11 +47,12 @@ window.addEventListener("load", () => {
       },
     });
   };
+
   renderImages();
   initScrollbar();
 
   const images = domUtils.getAll("section.images > figure");
-  console.log(images);
+
   gsap.to(images[0], { top: "3%", right: 0, duration: 0, zIndex: 0 });
   gsap.to(images[1], { top: "15%", right: 0, duration: 0, zIndex: 1 });
   gsap.to(images[2], { top: "35%", right: 0, duration: 0, zIndex: 2 });
@@ -59,9 +63,10 @@ window.addEventListener("load", () => {
   const defaultScrollPosition = {
     scroller: scrollBar,
     trigger: ".main",
-    start: "30px top",
+    start: "45px top",
     scrub: 1,
     end: "+=100%",
+    markers: true,
   } as ScrollTrigger.Vars;
 
   const endPosition = {
@@ -150,6 +155,4 @@ window.addEventListener("load", () => {
       transform: "translate(-50% , -50%)",
     })
     .to(images[5], { ...endPosition });
-
-  //   const images = domUtils.getAll("");
 });

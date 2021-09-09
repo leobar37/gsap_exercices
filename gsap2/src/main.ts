@@ -1,2 +1,2 @@
 import "./sass/style.scss";
-import "./ts/scroll";
+import "./ts/2";

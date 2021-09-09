@@ -1,3 +1,53 @@
 @import "base";
 @import "variables";
-@import "layout";
+// @import "layout";
+
+$background: black;
+$white: white;
+
+.main2 {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  //   background-color: $background;
+}
+
+.text {
+  height: 10vh;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $background;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  div {
+    font-style: italic;
+    text-align: center;
+    color: $white;
+    font-size: 100px;
+  }
+}
+
+.dots {
+  position: relative;
+  height: 200vh;
+  width: 100%;
+  .section {
+    width: 25px;
+    position: absolute;
+    height: 150px;
+    background: $white !important;
+    right: 0;
+    background-color: red;
+    top: 80px;
+  }
+}
